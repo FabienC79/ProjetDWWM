@@ -1,0 +1,56 @@
+/* Thème clair (par défaut) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #f0f0f0;
+    --calendar-border: #cccccc;
+    --event-bg: #e0e0e0;
+    --form-bg: #f5f5f5;
+    --button-bg: #4CAF50;
+    --button-color: #ffffff;
+    --button-hover: #45a049;
+}
+
+/* Thème sombre */
+.dark-theme {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --header-bg: #222222;
+    --calendar-border: #555555;
+    --event-bg: #4a4a4a;
+    --form-bg: #2a2a2a;
+    --button-bg: #4CAF50;
+    --button-color: #ffffff;
+    --button-hover: #45a049;
+}
+
+/* Application des variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-bg);
+}
+
+.calendar-day {
+    border-color: var(--calendar-border);
+}
+
+.calendar-day.has-event {
+    background-color: var(--event-bg);
+}
+
+#event-form {
+    background-color: var(--form-bg);
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
